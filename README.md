@@ -18,17 +18,9 @@ This project is a machine learning-based spam email classifier. It uses natural 
    ```sh
    pip install -r requirements.txt
    ```
-3. Run the classifier:
-   ```sh
-   python main.py
-   ```
 
 ## Dataset
 - The dataset used contains labeled spam and ham emails for training and testing.
-
-## Usage
-- Train a new model or use a pre-trained model to classify emails.
-- Modify `config.py` to change model parameters.
 
 ## License
 This project is open-source and free to use.
