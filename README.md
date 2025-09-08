@@ -62,7 +62,7 @@ email_spam_classifier/
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
+git clone https://github.com/Ashish1455/Spam-Email-Classification
 cd email_spam_classifier
 ```
 
@@ -74,7 +74,6 @@ pip install -r requirements.txt
 ### Required Dependencies
 - **Core Data Science**: pandas, numpy, scipy
 - **Machine Learning**: scikit-learn, xgboost
-- **Deep Learning**: tensorflow
 - **Natural Language Processing**: nltk
 - **Visualization**: matplotlib, seaborn
 - **Model Persistence**: joblib
@@ -224,7 +223,6 @@ The prediction functionality can be integrated into web frameworks like Flask or
 - **Libraries**: 
   - [scikit-learn](https://scikit-learn.org/) for machine learning algorithms
   - [XGBoost](https://xgboost.readthedocs.io/) for gradient boosting
-  - [TensorFlow](https://tensorflow.org/) for deep learning capabilities
   - [NLTK](https://nltk.org/) for natural language processing
   - [pandas](https://pandas.pydata.org/) for data manipulation
   - [matplotlib](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org/) for visualizations
