@@ -7,9 +7,6 @@ scikit-learn>=1.0.0
 xgboost>=1.5.0
 scipy>=1.7.0
 
-# Deep Learning
-tensorflow>=2.8.0
-
 # Natural Language Processing
 nltk>=3.6
 
