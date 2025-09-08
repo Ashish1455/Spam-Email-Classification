@@ -11,8 +11,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 from sklearn.preprocessing import LabelEncoder
 import xgboost as xgb
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout, LSTM, Embedding, Conv1D, GlobalMaxPooling1D
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import re
@@ -233,7 +231,7 @@ class EmailSpamClassifier:
             plt.title(f'Confusion Matrix - {self.best_model_name}')
             plt.ylabel('True Label')
             plt.xlabel('Predicted Label')
-            plt.savefig('models/confusion_matrix.png', dpi=300, bbox_inches='tight')
+            plt.savefig('confusion_matrix.png', dpi=300, bbox_inches='tight')
             plt.show()
 
     def save_model(self):
