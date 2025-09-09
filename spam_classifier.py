@@ -216,7 +216,7 @@ class EmailSpamClassifier:
         ax4.tick_params(axis='x', rotation=45)
 
         plt.tight_layout()
-        plt.savefig('models/model_comparison.png', dpi=300, bbox_inches='tight')
+        plt.savefig('model_comparison.png', dpi=300, bbox_inches='tight')
         plt.show()
 
         # Confusion matrix for best model
