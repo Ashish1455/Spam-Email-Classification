@@ -117,7 +117,7 @@ The project evaluates multiple machine learning algorithms and combines the best
 
 ### Performance Metrics
 
-![Model Performance Comparison](model%20comparison.png)
+![Model Performance Comparison](model_comparison.png)
 
 The ensemble model achieves exceptional performance across all metrics:
 - **Accuracy**: >99%
