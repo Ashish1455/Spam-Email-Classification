@@ -10,7 +10,6 @@ This project implements an advanced email spam classification system that can ac
 - **Multi-model comparison**: Trains 12+ different classification algorithms
 - **Ensemble learning**: Combines top-performing models for superior accuracy
 - **Text preprocessing**: Advanced NLP techniques including stemming and lemmatization
-- **Batch processing**: Efficiently process large datasets
 - **Interactive prediction**: Single email classification with confidence scores
 - **Comprehensive evaluation**: Detailed performance metrics and visualizations
 
@@ -48,6 +47,7 @@ email_spam_classifier/
 ├── GUI_app.py                   # Desktop GUI application
 ├── requirements.txt              # Python dependencies
 ├── model_comparison.png          # Performance comparison visualization
+├── GUI image.ng                  # GUI overview
 └── README.md                     # Project documentation
 ```
 
@@ -101,7 +101,7 @@ Use the interactive prediction script:
 ```bash
 python GUI_app.py
 ```
-![GUI overview](GUI image.png)
+![GUI overview](GUI%20image.png)
 
 ## 📈 Model Performance
 
@@ -117,7 +117,7 @@ The project evaluates multiple machine learning algorithms and combines the best
 
 ### Performance Metrics
 
-![Model Performance Comparison](model_comparison.png)
+![Model Performance Comparison](model%20comparison.png)
 
 The ensemble model achieves exceptional performance across all metrics:
 - **Accuracy**: >99%
