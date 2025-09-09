@@ -45,8 +45,7 @@ email_spam_classifier/
 │   ├── tokenizer.pkl            # Text tokenizer
 │   └── model_metadata.pkl       # Model metadata and scores
 ├── spam_classifier.py            # Main training and evaluation script
-├── predict.py                    # Single email prediction script
-├── batch_processing.py           # Batch CSV processing utility
+├── GUI_app.py                   # Desktop GUI application
 ├── requirements.txt              # Python dependencies
 ├── model_comparison.png          # Performance comparison visualization
 └── README.md                     # Project documentation
@@ -54,10 +53,9 @@ email_spam_classifier/
 
 ## 🛠️ Installation & Requirements
 
-### Prerequisites
-- Python 3.7 or higher
-- pip package manager
-
+### Python version
+- Python 3.10.18
+  
 ### Setup Instructions
 
 1. **Clone the repository**
@@ -77,7 +75,6 @@ pip install -r requirements.txt
 - **Natural Language Processing**: nltk
 - **Visualization**: matplotlib, seaborn
 - **Model Persistence**: joblib
-- **Utilities**: tqdm
 
 ## 🚀 Usage
 
@@ -97,54 +94,14 @@ This will:
 - Save all models and preprocessing components
 - Generate performance visualization plots
 
-### 2. Single Email Prediction
+### 2. Run Desktop GUI application
 
 Use the interactive prediction script:
 
 ```bash
-python predict.py
+python GUI_app.py
 ```
-
-**Example interaction:**
-```
-Email Spam Classifier - Ensemble Voting Model
-==================================================
-
-Enter email details:
-------------------------------
-Email Subject: Congratulations! You've won $1000!
-Email Sender (optional): winner@lottery.com
-Email Body (in one line): Click here to claim your prize now!
-Contains URLs? (0/1): 1
-
-==============================
-PREDICTION RESULT
-==============================
-Prediction: Spam
-Confidence: 0.967
-Model Used: Ensemble_Voting
-```
-
-### 3. Batch Processing
-
-Process multiple emails from a CSV file:
-
-```bash
-# Process single CSV file
-python batch_processing.py emails.csv -o predictions.csv
-
-# Process entire directory
-python batch_processing.py ./data --directory -o ./predictions
-
-# Custom chunk size for large files
-python batch_processing.py large_dataset.csv -c 5000
-```
-
-**Batch processing features:**
-- Memory-efficient chunked processing
-- Progress tracking and logging
-- Error handling and recovery
-- Processing statistics and summary
+![GUI overview](GUI image.png)
 
 ## 📈 Model Performance
 
@@ -187,35 +144,12 @@ Models achieving ≥99% accuracy and precision are automatically selected for th
 ### Model Architecture
 The ensemble voting classifier uses soft voting to combine predictions from multiple high-performing models, providing robust and reliable spam detection.
 
-## 🖥️ Deployment
-
-### Tkinter Desktop Application
-
-The project can be easily deployed as a desktop application using Python's Tkinter:
-
-```python
-import tkinter as tk
-from predict import EmailSpamPredictor
-
-def create_gui():
-    # Implementation for desktop GUI
-    predictor = EmailSpamPredictor()
-    # GUI components and event handlers
-    
-if __name__ == "__main__":
-    create_gui()
-```
-
-### Web Application
-The prediction functionality can be integrated into web frameworks like Flask or FastAPI for web deployment.
-
 ## 🏆 Key Results
 
 - **High Accuracy**: Ensemble model achieves >99% accuracy
 - **Robust Performance**: Consistent results across precision, recall, and F1-score
-- **Scalable Processing**: Efficient batch processing for large datasets
 - **User-Friendly**: Interactive prediction interface
-- **Comprehensive Evaluation**: Detailed model comparison and visualization
+- **Comprehensive Evaluation**: Model comparison and visualization
 
 ## 🤝 Acknowledgments
 
